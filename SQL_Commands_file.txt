@@ -1,0 +1,18 @@
+create database estore;
+use estore;
+==================
+create table Product (pid int, name varchar (256), brand varchar (256), price int, color varchar (256), ratings float);
+===================
+create table User (uid int, email varchar (256), password varchar (256), name varchar (256), age int);
+====================
+create table Orders (oid int, useremail varchar (256), amount int);
+show tables;
+=====================
+
+show tables;
+====================
+
+  describe User;
+	alter table User add prime int;
+	describe User;
+========================
