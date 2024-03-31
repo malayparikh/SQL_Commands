@@ -1,0 +1,51 @@
+-- Create table for employees
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(100),
+    department_id INT
+);
+
+-- Create table for departments
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100)
+);
+
+-- Insert data into employees table
+INSERT INTO employees (emp_id, emp_name, department_id) VALUES
+(1, 'John Doe', 1),
+(2, 'Jane Smith', 2),
+(3, 'Alice Johnson', 1),
+(4, 'Bob Williams', 3);
+
+-- Insert data into departments table
+INSERT INTO departments (dept_id, dept_name) VALUES
+(1, 'HR'),
+(2, 'Marketing'),
+(3, 'Finance');
+===============================================================
+
+-- Example: Retrieve employees from the HR department
+SELECT emp_id, emp_name
+FROM employees
+WHERE department_id = 1;
+
+-- Example: Count the number of employees in each department
+SELECT department_id, COUNT(emp_id) AS num_employees
+FROM employees
+GROUP BY department_id;
+
+-- Example: List employees sorted by their names
+SELECT emp_id, emp_name
+FROM employees
+ORDER BY emp_name;
+
+-- Example: Find employees whose names start with 'J'
+SELECT emp_id, emp_name
+FROM employees
+WHERE emp_name LIKE 'J%';
+
+-- Example: Retrieve the first 5 employees
+SELECT emp_id, emp_name
+FROM employees
+LIMIT 5;
