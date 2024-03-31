@@ -1,3 +1,4 @@
+sudo mysql -u root -p
 create database estore;
 use estore;
 ==================
