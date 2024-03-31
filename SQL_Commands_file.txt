@@ -16,3 +16,20 @@ show tables;
 	alter table User add prime int;
 	describe User;
 ========================
+describe User;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| uid      | int          | YES  |     | NULL    |       |
+| email    | varchar(256) | YES  |     | NULL    |       |
+| password | varchar(256) | YES  |     | NULL    |       |
+| name     | varchar(256) | YES  |     | NULL    |       |
+| age      | int          | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+mysql> SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| estore     |
++------------+
