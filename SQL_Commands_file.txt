@@ -34,3 +34,21 @@ mysql> SELECT DATABASE();
 +------------+
 | estore     |
 +------------+
+
+====================================================
+mysql> alter table User add prime int;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe User;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| uid      | int          | YES  |     | NULL    |       |
+| email    | varchar(256) | YES  |     | NULL    |       |
+| password | varchar(256) | YES  |     | NULL    |       |
+| name     | varchar(256) | YES  |     | NULL    |       |
+| age      | int          | YES  |     | NULL    |       |
+| prime    | int          | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
