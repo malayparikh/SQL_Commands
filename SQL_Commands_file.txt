@@ -52,3 +52,13 @@ mysql> describe User;
 | prime    | int          | YES  |     | NULL    |       |
 +----------+--------------+------+-----+---------+-------+
 6 rows in set (0.00 sec)
+==========To drop any column=========================================
+mysql> alter table User drop column prime;
+
+===============================================
+
+insert into User (uid, email, password, name, age, prime) values (1, 'breignould0@last.fm', 'wL5*Tzo>', 'Blancha', '20', 1);
+insert into User (uid, email, password, name, age, prime) values (2, 'ebeamand1@rakuten.co.jp', 'xG2|4_SFw!T@pBX{', 'Edmund', '30', 0);
+insert into User (uid, email, password, name, age, prime) values (3, 'usclater2@hubpages.com', 'mJ8/S3''A"jq,', 'Urbano', '35', 1);
+insert into User (uid, email, password, name, age, prime) values (4, 'tluffman3@wix.com', 'zU9}}Ys5''%BjYPh', 'Tersina', '40', 0);
+insert into User (uid, email, password, name, age, prime) values (5, 'tbauldry4@photobucket.com', 'gS4.(Gt5)', 'Tiphanie', '50', 1);
